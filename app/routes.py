@@ -6,10 +6,11 @@ app = Flask(__name__) # app is an instance
 def index(): # our view function
     return "<h1>Hello world</h1>" # return string
 
-@app.route("/about")
+@app.route("/aboutme")
 def about():
     me={
         "first_name:":"Jordi",
-        "second_name":"Bañuelos"
+        "second_name":"Bañuelos",
+        "hobby":"Media editing"
     }
     return me
